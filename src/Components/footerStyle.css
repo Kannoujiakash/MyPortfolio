@@ -1,0 +1,9 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0;
+    background: #333;
+}
+h4{
+    margin: 1rem;
+}

@@ -1,0 +1,138 @@
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+.AboutContent{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+margin: 2rem;
+max-width: 1200px;
+}
+
+.Profile{
+flex: 1;
+display: flex;
+justify-content: center;
+}
+.ProfileImg{
+width: 250px;
+height: 250px;
+border-radius: 5%;
+margin-bottom: 1rem;
+}
+.desc{
+flex: 2;
+margin-left: 2rem;
+}
+.desc p{
+font-family: 'Times New Roman', Times, serif;
+text-align: justify;
+text-justify: inter-word;
+font-size: 1.2rem;
+padding: 1rem;
+color: rgb(193, 191, 191);
+}
+.aboutSection h1{
+text-align: center;
+font-size: 3rem;
+color: hsl(0, 0%, 28%);
+margin-bottom: 2rem;
+font-family: monospace;
+cursor: pointer;
+text-transform: uppercase;
+letter-spacing: 7px;
+background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 3s infinite linear;
+}
+@keyframes shine {
+0% {
+    background-position: 0;
+}
+60% {
+    background-position: 300px;
+}
+100% {
+    background-position: 800px;
+}
+}
+
+.mySkills{
+    margin: 1rem;
+    padding: 1rem;
+    color: #fff;
+}
+.mySkills h2{
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(193, 191, 191);
+}
+.skillSet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3.5rem;
+    
+}
+.Skill{
+    border-radius: 5px;
+    background: #333;
+}
+.skillSet img{
+    
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+    max-width: 100px;
+    
+}
+.Image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+@media screen and (max-width:1040px){
+    .aboutSection h1{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .ProfileImg{
+        width: 150px;
+        height: 150px;
+        }
+    .AboutContent{
+        display: inline-block;
+        margin: 1rem;
+    }
+    .desc p{
+        font-size: 1rem;
+        padding: 0.8rem;
+        }
+    .title{
+        font-size: 0.9rem;
+        font-weight: 150;
+        text-align: center;
+        margin: 0 0 5px;
+    }
+        
+}
+  

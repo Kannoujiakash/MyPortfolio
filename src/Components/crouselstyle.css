@@ -1,0 +1,86 @@
+.crousel{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.gradientText{
+    background: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bgImg{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.crouselImg{
+    width: 100%;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.bgImg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.8;
+}
+
+.crousel .content{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.crousel .content h1{
+    font-size: 3rem;
+    margin: 1rem 0 2rem 0;
+}
+
+
+@media screen and (max-width:1040px){
+    .crousel .content{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+    .crousel .content h1{
+        font-size: 1.6rem;
+        /* margin: 0.5rem 0; */
+    }
+    
+} 
+
+.content .btn{
+    margin: 1rem 0.2rem;
+}
+
+@media screen and (max-width:640px){
+    .crousel .content{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        /* text-align: center; */
+    }
+    .crousel .content h1{
+        width: 100%;
+        height: 100%;
+        font-size: 1.7rem;
+        margin: 0rem 1rem 3rem 1rem;
+    }
+
+}

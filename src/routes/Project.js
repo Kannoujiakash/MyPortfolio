@@ -31,7 +31,7 @@ const allProject = [
 
 const Project = () => {
   return (
-    <div className="projectSection">
+    <div className="projectSection" id="project">
       <h1>Projects</h1>
       <div className="displayProject">
         {allProject.map((ob) => (

@@ -5,7 +5,7 @@ import teachStackList from "../Components/teachStackList";
 
 function About() {
   return (
-    <div className="aboutSection">
+    <div className="aboutSection" id="about">
       <h1>All About Myself</h1>
       <div className="AboutContent">
         <div className="Profile">

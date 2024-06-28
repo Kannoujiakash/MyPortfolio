@@ -2,6 +2,7 @@ import "./NavBarStyle.css";
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function NavBar() {
@@ -22,18 +23,49 @@ function NavBar() {
   return (
     <div>
       <div className={color ? "Header Header-bg" : "Header"}>
-        <Link to="/">
+        <ScrollLink to="/">
           <h1>Portfolio</h1>
-        </Link>
+        </ScrollLink>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-            <Link to="/about">About</Link>
+            <ScrollLink
+              to="home"
+              smooth={true}
+              duration={500}
+              onClick={() => setClick(false)}
+            >
+              Home
+            </ScrollLink>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              onClick={() => setClick(false)}
+            >
+              About
+            </ScrollLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <ScrollLink
+              to="project"
+              smooth={true}
+              duration={500}
+              onClick={() => setClick(false)}
+            >
+              Projects
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              onClick={() => setClick(false)}
+            >
+              Contact
+            </ScrollLink>
           </li>
         </ul>
         <div className="Hamburger" onClick={handleClick}>
